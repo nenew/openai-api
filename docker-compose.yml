@@ -1,0 +1,9 @@
+version: '3'
+services:
+  openai-api:
+    build: .
+    ports:
+      - "811:80"
+    environment:
+      - BIND_IP=${BIND_IP}
+      - SECRET=${SECRET}
